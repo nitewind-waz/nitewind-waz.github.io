@@ -15,5 +15,5 @@
   <li>Kontak</li>
 </ul>
 
-<h2>Dokumentasi</h2>
+<h2>C. Dokumentasi</h2>
 <p>Dokumentasi dilampirkan pada dokumen pdf dan pembuatan web ini tidak menggunakan pustaka maupun kerangka kerja tambahan maupun melihat referensi lainnya.</p>
