@@ -1,0 +1,243 @@
+/* Reset & Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+body {
+    background: #f7f9fc;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Head */
+.head {
+    background: #2c3e50;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    border-bottom: 4px solid #1abc9c;
+}
+
+.head h1 {
+    font-size: 2.2rem;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 1rem 0;
+}
+
+/* About Me */
+.about-me {
+    background: white;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.image-profile img {
+    width: 150px;
+    border-radius: 50%;
+    border: 3px solid #1abc9c;
+}
+
+.about-me-content {
+    flex: 1;
+}
+
+/* Riwayat Pendidikan */
+.riwayat-pendidikan {
+    background: white;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.school-table table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.school-table th, .school-table td {
+    padding: 10px;
+}
+
+.school-table img {
+    width: 100px;
+    border-radius: 8px;
+}
+
+/* Responsive */
+.school-table-list {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .school-table table {
+        display: none;
+    }
+
+    .school-table-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .school-card {
+        background: #f1f1f1;
+        padding: 1rem;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .school-card img {
+        width: 100px;
+        border-radius: 8px;
+        margin: 0.5rem 0;
+    }
+
+    .school-card h3 {
+        margin-bottom: 0.3rem;
+        color: #2c3e50;
+    }
+
+    .school-card p {
+        font-size: 0.9rem;
+        color: #555;
+    }
+}
+
+
+/* Experience */
+.experience-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.experience-item img {
+    max-width: 200px; 
+    width: 100%;
+    border-radius: 10px;
+    flex-shrink: 0; 
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .experience-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .experience-item img {
+        max-width: 150px;
+        margin: auto;
+    }
+}
+
+/* Skills */
+.skills {
+    background: white;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.skill-list ul {
+    list-style: none;
+}
+
+.skill-list li {
+    background: #1abc9c;
+    color: white;
+    display: inline-block;
+    padding: 6px 12px;
+    margin: 6px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+/* Project */
+.project {
+    background: white;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.project ul {
+    list-style: none;
+}
+
+.project li {
+    background: #1abc9c;
+    color: white;
+    display: inline-block;
+    padding: 6px 12px;
+    margin: 6px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+/* Footer Contact */
+#footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    border-top: 4px solid #1abc9c;
+    border-radius: 12px 12px 0 0;
+}
+
+#footer h2 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+#footer p {
+    margin: 5px 0;
+}
+
+#footer a {
+    color: #1abc9c;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#footer a:hover {
+    color: #16a085;
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-me {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .experience-1 {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .school-table img {
+        width: 80px;
+    }
+}
